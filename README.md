@@ -86,15 +86,14 @@ Você pode agendar a execução automática do script via Agendador de Tarefas d
 
 No campo Ação, selecione:
 ```bash
-Programa/script: python  
+Programa/script: python  O
 Argumentos: "C:\caminho\para\main.py"
 ```
 
-Configure o disparo (por exemplo, diariamente).
+Configure o disparo (por exemplo, diariamente) e conclua ação. 
+Depois de tudo configurado, você pode acionar manualmente o gatilho em Agendamento de tarefas para confirmar se está tudo funcionando.
 
 💡 Dica: Habilite a opção de armazenar senha para o script rodar sem interrupções.
-
-<img width="677" height="224" alt="image" src="https://github.com/user-attachments/assets/4356d90c-1831-4a52-b8da-065d2edf9c94" />
 
 Sinta-se livre para sugerir melhorias, abrir issues ou enviar pull requests.
 Este projeto é simples, mas poderoso para quem quer sincronizar o estudo entre Notion e Anki 🔁
