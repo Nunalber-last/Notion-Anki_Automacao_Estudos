@@ -77,7 +77,7 @@ Exemplo de template do verso:
 
 ```
 
-##Execução automática (Windows)
+## Execução automática (Windows)
 
 Você pode agendar a execução automática do script via Agendador de Tarefas do Windows:
 - Abra o Agendador de Tarefas.
