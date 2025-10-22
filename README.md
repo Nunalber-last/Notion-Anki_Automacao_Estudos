@@ -1,11 +1,11 @@
-# 🧠 Integração Notion → Anki
+# Integração Notion → Anki
 
 Este projeto automatiza a criação de flashcards no **Anki** com base em dados armazenados em uma **base de dados do Notion**.  
 As imagens também são baixadas automaticamente e enviadas para o Anki via **AnkiConnect**.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Conecta ao **Notion** via API.
 - Extrai campos personalizados (como `titulo`, `frente`, `verso`, `imagem`, `data`).
@@ -15,21 +15,21 @@ As imagens também são baixadas automaticamente e enviadas para o Anki via **An
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
-### 🧩 Softwares necessários
+### Softwares necessários
 - [Python 3.10+](https://www.python.org/)
 - [Anki](https://apps.ankiweb.net/)
 - [AnkiConnect (código 2055492159)](https://ankiweb.net/shared/info/2055492159)
 - [Notion API](https://developers.notion.com/)
 
-### 📦 Bibliotecas Python
+### Bibliotecas Python
 Instale os pacotes necessários:
 ```bash
 pip install requests notion-client
 ```
 
-## 🔑 Configuração
+## Configuração
 
 Edite as variáveis no início do arquivo `main.py`:
 
@@ -40,7 +40,7 @@ ANKI_CONNECT_URL = "http://localhost:8765"
 ```
 
 
-## 🧱 Estrutura esperada da base no Notion
+## Estrutura esperada da base no Notion
 
 A base de dados deve conter as seguintes colunas:
 | Campo     | Tipo        | Descrição                              |
@@ -51,7 +51,7 @@ A base de dados deve conter as seguintes colunas:
 | imagem    | Arquivo/URL | Imagem associada ao card (opcional).   |
 | data_prop | Data        | Data de criação ou revisão (opcional). |
 
-## 🧩 Modelo no Anki
+## Modelo no Anki
 
 Crie um modelo chamado "NotionBasic" no Anki com os seguintes campos:
 
@@ -61,7 +61,7 @@ Crie um modelo chamado "NotionBasic" no Anki com os seguintes campos:
 - imagem  
 - data  
 
-🪞 Exemplo de template da frente:
+Exemplo de template da frente:
 ```bash
 <h2>{{titulo}}</h2>
 <hr>
@@ -69,7 +69,7 @@ Crie um modelo chamado "NotionBasic" no Anki com os seguintes campos:
 {{imagem}}
 ```
 
-🔙 Exemplo de template do verso:
+Exemplo de template do verso:
 ```bash
 {{FrontSide}}
 <hr>
@@ -77,7 +77,7 @@ Crie um modelo chamado "NotionBasic" no Anki com os seguintes campos:
 
 ```
 
-## 🕒 Execução automática (Windows)
+##Execução automática (Windows)
 
 Você pode agendar a execução automática do script via Agendador de Tarefas do Windows:
 - Abra o Agendador de Tarefas.
